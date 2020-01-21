@@ -1,53 +1,102 @@
 
 /* Inline #1 | file:///home/sonya/the_odin_project/google_homepage/index.html */
+
+/* General page settings */
+
 html,body{
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     font-size: small;
-    }
+    position: absolute;
+    width:100%;
+}
 
 body {
     color: black;
     background-color: #fff;
-    }
+    font-size:13px;
+}
 
 body, a {
     font-family: arial, "sans serif";
 }
 
+/* Header nav bar */
+
+nav {
+    display: block;
+    width: 100%;
+    padding-left: 12px;
+}
+
+.nav-left ul li, .nav-right ul li {
+    display: inline-block;
+    padding-top: 10px;
+}
+.nav-left {
+    display: block;
+    float: left;
+    padding-right: 20px;
+}
+
+.nav-right {
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.app{
+    height:10px;/*
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;*/
+}
+.button{
+    color:white;
+    font-weight: bold;
+    background-color: blue;
+    border: 2px solid blue;
+}
+
+/* main section */
+
+
 a {
     color: black;
     text-decoration: none;
+    padding-right: 15px;
 }
 
 a:hover{
     text-decoration: underline;
 }
 
-div#page {
-    width: 100%;
-    top: 0;
+.lg {
+    margin-top: 35px;
+
+}
+
+.search{
+    display: flex;
+    flex:1 1 0%;
+
+}
+/* Footer section */
+
+footer {
+    display: block;
     position: absolute;
-    }
-
-#page {
-    min-height: 100%;
+    background-color: rgb(228, 224, 224);
+    width: 100%;
+    height:70px;
 }
 
-div#top {
-    position: relative;
-    top: 20px;
+footer li {
+    display: inline-block;
+    padding-left: 12px;
 }
 
-#mid {
-    margin-top: 47px;
-    height: 233px;
+footer li.right {
+    float: right;
 }
 
-div#links {
-    margin: 7px 0 0 10px;
-}
-
-#footer {
-    position: fixed;
-}

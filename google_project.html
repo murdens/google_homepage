@@ -5,44 +5,51 @@
     <title> Sonyas Google</title>
     <link rel="stylesheet" href="style.css">
 </head>    
-<body id="page" class="page1" >
-    <div id="top" class="top1">
-        <div id="links">
-            <a href="">About</a>
-            <a href="">Store</a>     
-            <a href="">Gmail</a>
-            <a href="">Images</a>
-            <input type="submit" value="Sign in" >
-        </div>
+<body class="page" >
+<nav>
+    <div class="nav-left">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
     </div>
-    <div id="main" class="main1">
-        <span id="body" class="center">
-        <center>
-                <div id="mid">
-                    <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"
-                    style="padding-top: 100px;" width="292" height="96">
-                </div>        
-    <div id="search" class="s1"></div>
-    <form id="sf" action="/search" method="GET" role="search">
+    <div class="nav-right">
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#"><img src=".google-apps.png" class="app"></li>               
+            <li><input class="button" type="submit" value="Sign in" ></li>
+        </ul>
+    </div>          
+</nav>
+
+<center>
+    <div class="lg">
+        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"
+        style="padding-top: 100px;" width="292" height="96">
+    </div>        
+    <div class="search"></div>
+        <form id="sf" action="/search" method="GET" role="search">
         <input type="text">
         </form>
-        <div style="height: 30px"></div>        
+    <div style="height: 30px"></div>        
     <div>
         <input type="submit" value="Google Search">
         <input type="submit" value="I'm Feeling Lucky">
     </div>
-    </center>
-</span>
-<div style="height: 120px"></div>   
-    <footer id="footer" class="footer">
-        <div id="foot1">
-            <a href="">Advertising</a>
-            <a href="">Business</a>
-            <a href="">How Search Works</a>
-            <a href="">Privacy</a>
-            <a href="">Terms</a>
-            <a href="">Settings</a>
-        </div>
-    </footer>
-</body>  
+</center>
+
+<footer>   
+    <ul>
+        <li><a href="#">Advertising</a></li> 
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search Works</a></li>
+        <li class=right><a href="#">Privacy</a></li>
+        <li class=right><a href="#">Terms</a></li>
+        <li class=right><a href="#">Settings</a></li>
+    </ul>
+</footer>
+
+</body>
+
 </html>
