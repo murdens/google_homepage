@@ -21,6 +21,16 @@ body, a {
     font-family: arial, "sans serif";
 }
 
+a {
+    color: black;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 /* Header nav bar */
 
 nav {
@@ -45,12 +55,10 @@ nav {
     padding-right: 20px;
 }
 
-.app{
-    height:10px;/*
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;*/
+nav i{
+    vertical-align: middle;
 }
+
 .button{
     color:white;
     font-weight: bold;
@@ -60,18 +68,8 @@ nav {
 
 /* main section */
 
-
-a {
-    color: black;
-    text-decoration: none;
-    padding-right: 15px;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-.main{
+.main {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +103,7 @@ a:hover{
 
 footer {
     position: absolute;
-    background-color: rgb(228, 224, 224);
+    background-color: #f2f2f2;
     width: 100%;
     bottom: 0;
 }
