@@ -71,25 +71,24 @@ a:hover{
     text-decoration: underline;
 }
 
-.lg {
-    margin-top: 35px;
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.searchBar{
+.searchbar{
     border: 1px solid #dfe1e5;
-    height: 44px;
-    width: 582px;
+    height: 35px;
+    width: 400px;
     border-radius: 24px;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    -ms-border-radius: 24px;
-    -o-border-radius: 24px;
     box-shadow: none;
     display: flex;
     margin-top: 30px;
 }
 
-.searchBar input{
+.searchbar input{
     width: 90%;
     margin-left: 15px;
     border: none;
@@ -102,23 +101,21 @@ a:hover{
     margin-top: 20px;
 }
 
-
 /* Footer section */
 
 footer {
-    display: block;
     position: absolute;
     background-color: rgb(228, 224, 224);
     width: 100%;
-    height:70px;
+    bottom: 0;
 }
 
 footer li {
     display: inline-block;
-    padding-left: 12px;
 }
 
 footer li.right {
     float: right;
+    padding-right: 12px;
 }
 
